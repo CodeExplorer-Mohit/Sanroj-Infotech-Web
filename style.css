@@ -1,0 +1,64 @@
+.toggler-menu-bar{
+  position: absolute;
+  background-color: rgba(15, 15, 15,0.99)!important;
+  top: 70px; 
+  right: -100%;
+  transition: all .3s ease;
+}
+
+#burger-menu:checked ~ .toggler-menu-bar{
+  right: 0%;
+}
+
+.svg-image{
+  animation-name: svg-rotation;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes svg-rotation {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+
+.button-effect{
+  position: relative;
+  overflow: hidden;
+  color: #FFFFFF;
+  transition-delay: .4s;
+  transition-duration: .3s;
+  transition-property: all;
+}
+
+.button-effect:hover{
+  box-shadow: 0 0 4px 0px rgba(255,255,255,1);
+  color: #66fcf1!important;
+}
+
+.arrow-icon{
+  transition-delay: .4s;
+  color: #66fcf1!important;
+}
+
+.button-effect:hover.button-effect .arrow-icon{
+  color: #66fcf1!important;
+}
+
+.button-effect::after{
+  content: "";
+  transform: skew(50deg);
+  transition: all .2s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255,1);
+  left: -110%;
+}
+
+.button-effect:hover.button-effect::after{
+  left:110%;
+
+}
+

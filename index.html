@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanroj Infotech</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="root bg-[#F6F7FC] flex justify-center items-center flex-col overflow-hidden"
+    >
+      <header
+        class="bg-[#0F0F0F] flex justify-center items-center w-[100%] h-[70px] fixed top-0 z-[1000]"
+      >
+        <nav class="flex justify-between items-center w-[90%]">
+          <div class="text-[#FFF] w-[20%]">Logo</div>
+
+          <label for="burger-menu" class="text-[#fff] cursor-pointer md:hidden"
+            ><img class="w-[46px]" src="./imges/menus_6995971.png" alt=""
+          /></label>
+          <input type="checkbox" id="burger-menu" class="hidden" />
+          <ul
+            class="group toggler-menu-bar flex flex-col justify-center items-start w-[60%] px-5 py-5 md:hidden"
+          >
+            <li class="text-[#FFFFFF] px-6 py-2">Home</li>
+            <li class="text-[#FFFFFF] px-6 py-2">About</li>
+            <li class="text-[#FFFFFF] px-6 py-2">Services</li>
+            <li class="text-[#FFFFFF] px-6 py-2">Marketing</li>
+            <li class="text-[#FFFFFF] px-6 py-2">Careers</li>
+            <li class="text-[#FFFFFF] px-6 py-2">Support</li>
+            <li class="text-[#FFFFFF] px-6 py-2">Bulk Sms</li>
+            <button
+              class="bg-[#66FCF1] rounded-[20px] w-[150px] h-[40px] text-[#202833] font-[800] mt-1"
+            >
+              Contact
+            </button>
+          </ul>
+          <div
+            class="flex justify-end items-center w-[80%] px-4 sm:block hidden"
+          >
+            <ul class="flex justify-end items-center w-full">
+              <li class="text-[#FFFFFF] px-6 py-2">Home</li>
+              <li class="text-[#FFFFFF] px-6 py-2">About</li>
+              <li class="text-[#FFFFFF] px-6 py-2">Services</li>
+              <li class="text-[#FFFFFF] px-6 py-2">Marketing</li>
+              <li class="text-[#FFFFFF] px-6 py-2">Careers</li>
+              <li class="text-[#FFFFFF] px-6 py-2">Support</li>
+              <li class="text-[#FFFFFF] px-6 py-2">Bulk Sms</li>
+              <button
+                class="flex justify-between items-center text-[18px] font-[700] px-8 py-[8px] rounded-[20px] shadow-[0_4px_4px_rgba(0,0,0,0.1)] button-effect"
+              >
+                Contact Us
+
+                <i
+                  class="fa-solid fa-arrow-right-long ml-4 arrow-icon"
+                  style="color: #ffffff"
+                ></i>
+              </button>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main
+        class="w-[100%] flex justify-center items-center flex-col mt-[60px]"
+      >
+        <!-- hero section -->
+        <section
+          class="bg-[#000000] flex justify-center items-center w-full md:py-8"
+        >
+          <div
+            class="flex flex-col-reverse md:flex-row justify-center items-center w-[90%] py-4"
+          >
+            <div
+              class="flex flex-col justify-center items-center md:items-start md:w-[50%]"
+            >
+              <div
+                class="flex flex-col justify-center items-center md:items-start px-4 md:px-10 w-full"
+              >
+                <h1
+                  class="text-[#FFFFFF] font-[800] text-[4rem] mb-2 text-center w-[100%] md:text-left"
+                >
+                  Sanroj Infotech
+                </h1>
+                <p
+                  class="text-[#FFFFFF] text-[1.3rem] font-[600] text-center md:text-left w-full py-2 md:py-0"
+                >
+                  <span class="text-[#FF7A1F] text-[1.4rem] font-[900]"
+                    >Software</span
+                  >
+                  and
+                  <span class="text-[1.4rem] font-[900]">web</span> developer
+                  company
+                </p>
+                <p
+                  class="text-[#FFFFFF] text-[1.3rem] font-[600] w-full text-center md:text-left md:w-[70%]"
+                >
+                  we are the one who provides you complete solution for your
+                  business.
+                </p>
+              </div>
+              <ul
+                class="flex flex-col justify-center items-center md:items-start md:px-10 py-8 md:py-5"
+              >
+                <li class="flex justify-between items-center my-1">
+                  <span
+                    class="w-[20px] h-[20px] bg-gradient-to-r from-[#66FCF1] to-[#C6FFFB] rounded-full mr-2 hidden md:block"
+                  ></span>
+                  <p class="text-[#ABAFB5] font-[600] ml-1">
+                    Trusted Services by Clients
+                  </p>
+                </li>
+                <li class="flex justify-between items-center my-1">
+                  <span
+                    class="w-[20px] h-[20px] bg-gradient-to-r from-[#66FCF1] to-[#C6FFFB] rounded-full mr-2 hidden md:block"
+                  ></span>
+                  <p class="text-[#ABAFB5] font-[600] ml-1">
+                    24x7 Customer Support
+                  </p>
+                </li>
+                <li class="flex justify-between items-center my-1">
+                  <span
+                    class="w-[20px] h-[20px] bg-gradient-to-r from-[#66FCF1] to-[#C6FFFB] rounded-full mr-2 hidden md:block"
+                  ></span>
+                  <p class="text-[#ABAFB5] font-[600] ml-1">
+                    Website Design & Development
+                  </p>
+                </li>
+                <li class="flex justify-between items-center my-1">
+                  <span
+                    class="w-[20px] h-[20px] bg-gradient-to-r from-[#66FCF1] to-[#C6FFFB] rounded-full mr-2 hidden md:block"
+                  ></span>
+                  <p class="text-[#ABAFB5] font-[600] ml-1">
+                    Software Implementation / Customization
+                  </p>
+                </li>
+                <li class="flex justify-between items-center my-1">
+                  <span
+                    class="w-[20px] h-[20px] bg-gradient-to-r from-[#66FCF1] to-[#C6FFFB] rounded-full mr-2 hidden md:block"
+                  ></span>
+                  <p class="text-[#ABAFB5] font-[600] ml-1">
+                    One Stop Solution by Sanroj Infotech
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="relative flex justify-center items-center w-[90%] md:w-[50%] z-[400] md:pt-10"
+            >
+              <p
+                class="absolute text-[#FFFFFF] text-[2.5rem] font-[800] z-[500] w-[50%] text-center drop-shadow leading-10 md:leading-none"
+              >
+                Host Your Website
+              </p>
+              <svg
+                width="481"
+                height="450"
+                viewBox="0 0 481 450"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="svg-image"
+              >
+                <path
+                  d="M221.284 218V202.182H223.714V218H221.284ZM222.519 199.545C222.046 199.545 221.637 199.384 221.294 199.061C220.957 198.739 220.789 198.351 220.789 197.898C220.789 197.445 220.957 197.057 221.294 196.734C221.637 196.411 222.046 196.25 222.519 196.25C222.993 196.25 223.398 196.411 223.735 196.734C224.078 197.057 224.249 197.445 224.249 197.898C224.249 198.351 224.078 198.739 223.735 199.061C223.398 199.384 222.993 199.545 222.519 199.545Z"
+                  fill="#222222"
+                />
+                <circle
+                  cx="237"
+                  cy="226"
+                  r="200"
+                  fill="#060709"
+                  stroke="#444444"
+                  stroke-opacity="0.266667"
+                  stroke-width="2"
+                  stroke-dasharray="5 5"
+                />
+                <g filter="url(#filter0_d_38_344)">
+                  <rect
+                    x="84"
+                    y="27"
+                    width="80"
+                    height="80"
+                    rx="30"
+                    fill="#0E0E0E"
+                  />
+                  <rect
+                    x="84.5"
+                    y="27.5"
+                    width="79"
+                    height="79"
+                    rx="29.5"
+                    stroke="#FF7A1F"
+                    stroke-dasharray="5 5"
+                  />
+                </g>
+                <g filter="url(#filter1_d_38_344)">
+                  <rect
+                    x="317"
+                    y="336"
+                    width="80"
+                    height="80"
+                    rx="30"
+                    fill="#0E0E0E"
+                  />
+                  <rect
+                    x="317.5"
+                    y="336.5"
+                    width="79"
+                    height="79"
+                    rx="29.5"
+                    stroke="#FF7A1F"
+                    stroke-dasharray="5 5"
+                  />
+                </g>
+                <g filter="url(#filter2_d_38_344)">
+                  <rect
+                    x="95"
+                    y="348"
+                    width="80"
+                    height="80"
+                    rx="30"
+                    fill="#0E0E0E"
+                  />
+                  <rect
+                    x="95.5"
+                    y="348.5"
+                    width="79"
+                    height="79"
+                    rx="29.5"
+                    stroke="#FF7A1F"
+                    stroke-dasharray="5 5"
+                  />
+                </g>
+                <g filter="url(#filter3_d_38_344)">
+                  <rect
+                    x="4"
+                    y="201"
+                    width="80"
+                    height="80"
+                    rx="30"
+                    fill="#0E0E0E"
+                  />
+                  <rect
+                    x="4.5"
+                    y="201.5"
+                    width="79"
+                    height="79"
+                    rx="29.5"
+                    stroke="#FF7A1F"
+                    stroke-dasharray="5 5"
+                  />
+                </g>
+                <g filter="url(#filter4_d_38_344)">
+                  <rect
+                    x="303"
+                    y="14"
+                    width="80"
+                    height="80"
+                    rx="30"
+                    fill="#0E0E0E"
+                  />
+                  <rect
+                    x="303.5"
+                    y="14.5"
+                    width="79"
+                    height="79"
+                    rx="29.5"
+                    stroke="#FF7A1F"
+                    stroke-dasharray="5 5"
+                  />
+                </g>
+                <g filter="url(#filter5_d_38_344)">
+                  <rect
+                    x="397"
+                    y="185"
+                    width="80"
+                    height="80"
+                    rx="30"
+                    fill="#0E0E0E"
+                  />
+                  <rect
+                    x="397.5"
+                    y="185.5"
+                    width="79"
+                    height="79"
+                    rx="29.5"
+                    stroke="#FF7A1F"
+                    stroke-dasharray="5 5"
+                  />
+                </g>
+                <g filter="url(#filter6_f_38_344)">
+                  <circle cx="229" cy="225" r="75" fill="#66FCF1" />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_38_344"
+                    x="80"
+                    y="23"
+                    width="88"
+                    height="88"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_38_344"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_38_344"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter1_d_38_344"
+                    x="313"
+                    y="332"
+                    width="88"
+                    height="88"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_38_344"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_38_344"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter2_d_38_344"
+                    x="91"
+                    y="344"
+                    width="88"
+                    height="88"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_38_344"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_38_344"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter3_d_38_344"
+                    x="0"
+                    y="197"
+                    width="88"
+                    height="88"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_38_344"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_38_344"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter4_d_38_344"
+                    x="299"
+                    y="10"
+                    width="88"
+                    height="88"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_38_344"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_38_344"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter5_d_38_344"
+                    x="393"
+                    y="181"
+                    width="88"
+                    height="88"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_38_344"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_38_344"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter6_f_38_344"
+                    x="4"
+                    y="0"
+                    width="450"
+                    height="450"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="75"
+                      result="effect1_foregroundBlur_38_344"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- our qualities section  -->
+        <section
+          class="bg-[#000000] flex justify-center items-center w-full py-10"
+        >
+          <div
+            class="flex flex-col md:flex-row justify-center items-center w-[90%] py-4"
+          >
+            <ul
+              class="flex flex-col md:flex-row justify-between items-center w-full py-2"
+            >
+              <li
+                class="relative flex flex-col justify-center items-start bg-[#0E0E0E] my-6 mx-5 px-4 shadow-[0_0_200px_4px_rgba(255,255,255,1)] rounded-[10px] border-b-4 border-b-[#FF7A1F]"
+              >
+                <span
+                  class="absolute w-[50px] h-[50px] bg-[#FFFFFF] shadow-[0_8px_8px_10px_rgba(0,0,0,0.5)] rounded-[10px] -top-4 right-10"
+                ></span>
+                <p class="text-[2rem] text-[#FFFFFF] font-[800] my-1">Trust</p>
+                <p class="text-[#FFFFFF] mt-1 mb-3">
+                  Trust with your Business And Drive Your Journey To Peek!
+                </p>
+              </li>
+              <li
+                class="relative flex flex-col justify-center items-start bg-[#0E0E0E] my-6 mx-5 px-4 shadow-[0_0_200px_4px_rgba(255,255,255,1)] rounded-[10px] border-b-4 border-b-[#FF7A1F]"
+              >
+                <span
+                  class="absolute w-[50px] h-[50px] bg-[#FFFFFF] shadow-[0_8px_10px_6px_rgba(0,0,0,0.5)] rounded-[10px] -top-4 right-10"
+                ></span>
+                <p class="text-[2rem] text-[#FFFFFF] font-[800] my-1">
+                  Loyality
+                </p>
+                <p class="text-[#FFFFFF] mt-1 mb-3">
+                  Trust with your Business And Drive Your Journey To Peek!
+                </p>
+              </li>
+              <li
+                class="relative flex flex-col justify-center items-start bg-[#0E0E0E] my-6 mx-5 px-4 shadow-[0_0_200px_4px_rgba(255,255,255,1)] rounded-[10px] border-b-4 border-b-[#FF7A1F]"
+              >
+                <span
+                  class="absolute w-[50px] h-[50px] bg-[#FFFFFF] shadow-[0_8px_10px_6px_rgba(0,0,0,0.5)] rounded-[10px] -top-4 right-10"
+                ></span>
+                <p class="text-[2rem] text-[#FFFFFF] font-[800] my-1">
+                  Service
+                </p>
+                <p class="text-[#FFFFFF] mt-1 mb-3">
+                  Trust with your Business And Drive Your Journey To Peek!
+                </p>
+              </li>
+              <li
+                class="relative flex flex-col justify-center items-start bg-[#0E0E0E] my-6 mx-5 px-4 shadow-[0_0_200px_4px_rgba(255,255,255,1)] rounded-[10px] border-b-4 border-b-[#FF7A1F]"
+              >
+                <span
+                  class="absolute w-[50px] h-[50px] bg-[#FFFFFF] shadow-[0_8px_10px_6px_rgba(0,0,0,0.5)] rounded-[10px] -top-4 right-10"
+                ></span>
+                <p class="text-[2rem] text-[#FFFFFF] font-[800] my-1">
+                  Service
+                </p>
+                <p class="text-[#FFFFFF] mt-1 mb-3">
+                  Trust with your Business And Drive Your Journey To Peek!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- our services Card section  -->
+
+        <section
+          class="bg-[#F6F7FC] flex justify-center items-center w-full py-4"
+        >
+          <div class="flex flex-col justify-center items-center w-[90%] py-4">
+            <div class="flex flex-col justify-center items-center mb-5">
+              <p
+                class="text-[#202833] text-[1.8rem] md:text-[2.3rem] font-[700] tracking-[px] mb-1 text-center"
+              >
+                Our <span class="text-[#FF7A1F]">Services</span> At a Glance
+              </p>
+              <p
+                class="text-[#444444] text-[1.2rem] font-[600] text-center mt-2"
+              >
+                We are the one wo Provides Complete IT solution for your
+                business
+              </p>
+            </div>
+            <ul
+              class="flex flex-col flex-wrap md:flex-row justify-center md:justify-between items-center w-full my-10 px-4"
+            >
+              <li
+                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+              >
+                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                  Host Yout Website
+                </p>
+                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+
+                  <img
+                  src="https://www.sanroj.com/images/site-icon11.png"
+                  alt="img1"
+                  class="w-[160px] my-2 mb-4 ml-4"
+                  />
+                </div>
+                <button
+                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                >
+                  Know More
+                </button>
+              </li>
+
+              <li
+                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+              >
+                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                  Host Yout Website
+                </p>
+                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+
+                  <img
+                  src="https://www.sanroj.com/images/site-icon11.png"
+                  alt="img1"
+                  class="w-[160px] my-2 mb-4 ml-4"
+                  />
+                </div>
+                <button
+                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                >
+                  Know More
+                </button>
+              </li>
+
+              <li
+                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+              >
+                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                  Host Yout Website
+                </p>
+                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+
+                  <img
+                  src="https://www.sanroj.com/images/site-icon11.png"
+                  alt="img1"
+                  class="w-[160px] my-2 mb-4 ml-4"
+                  />
+                </div>
+                <button
+                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                >
+                  Know More
+                </button>
+              </li>
+
+              <li
+                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+              >
+                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                  Host Yout Website
+                </p>
+                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+
+                  <img
+                  src="https://www.sanroj.com/images/site-icon11.png"
+                  alt="img1"
+                  class="w-[160px] my-2 mb-4 ml-4"
+                  />
+                </div>
+                <button
+                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                >
+                  Know More
+                </button>
+              </li>
+              <li
+                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+              >
+                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                  Host Yout Website
+                </p>
+                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+
+                  <img
+                  src="https://www.sanroj.com/images/site-icon11.png"
+                  alt="img1"
+                  class="w-[160px] my-2 mb-4 ml-4"
+                  />
+                </div>
+                <button
+                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                >
+                  Know More
+                </button>
+              </li>
+
+              <li
+                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+              >
+                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                  Host Yout Website
+                </p>
+                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+
+                  <img
+                  src="https://www.sanroj.com/images/site-icon11.png"
+                  alt="img1"
+                  class="w-[160px] my-2 mb-4 ml-4"
+                  />
+                </div>
+                <button
+                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                >
+                  Know More
+                </button>
+              </li>
+
+              <li
+                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+              >
+                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                  Host Yout Website
+                </p>
+                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+
+                  <img
+                  src="https://www.sanroj.com/images/site-icon11.png"
+                  alt="img1"
+                  class="w-[160px] my-2 mb-4 ml-4"
+                  />
+                </div>
+                <button
+                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                >
+                  Know More
+                </button>
+              </li>
+
+              <li
+                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+              >
+                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                  Host Yout Website
+                </p>
+                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+
+                  <img
+                  src="https://www.sanroj.com/images/site-icon11.png"
+                  alt="img1"
+                  class="w-[160px] my-2 mb-4 ml-4"
+                  />
+                </div>
+                <button
+                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                >
+                  Know More
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="bg-[#000000] flex justify-center items-center w-full pt-10 pb-5"
+      >
+        <div class="flex flex-col justify-center items-center w-[90%] py-4">
+          <ul class="flex flex-col md:flex-row justify-center items-start w-full py-4 md:py-10 md:px-10">
+            <li class="flex flex-col justify-center items-center md:items-start w-full md:w-[25%] px-4 py-4 md:py-2">
+              <p class="text-[#FFFFFF] text-[1.3rem] font-[800] mb-2 text-center md:text-left">
+                SANROJ Infotech Pvt Ltd.
+              </p>
+              <p class="text-[14px] font-[600] text-[#CCCCCC] w-[90%] text-center md:text-left">
+                We are the standard website and Application & Software Developer
+                in IT Industries. We have 150+ Indian and Foreign customers.
+              </p>
+            </li>
+            <div class="flex justify-around items-start w-full md:w-[50%]">
+            <li class="flex flex-col justify-center items-center md:items-start w-[50%] md:w-[50%] px-4 md:px-10 py-4 md:py-2">
+              <p class="text-[18px] font-[700] text-[#FFFFFF] mb-2 text-center md:text-left">Services</p>
+              <p class="text-[14.4px] font-[600] text-[#CCCCCC] hover:text-[#66FCF1] my-2 text-center md:text-left">
+                <a href="">
+                  Supports & FAQ
+                </a>
+              </p>
+              <p class="text-[14.4px] font-[600] text-[#CCCCCC] hover:text-[#66FCF1] my-2 text-center md:text-left">
+                <a href="">
+                  Email Our Support Team
+                </a>
+              </p>
+            </li>
+            <li class="flex flex-col justify-center items-center md:items-start w-[50%] md:w-[50%] px-4 md:px-10 py-4 md:py-2">
+              <p class="text-[18px] font-[700] text-[#FFFFFF] mb-2 text-center md:text-left">Legal</p>
+              <p class="text-[14.4px] font-[600] text-[#CCCCCC] hover:text-[#66FCF1] my-2 text-center md:text-left">
+                <a href="">
+
+                  Terms of Services
+                </a>
+              </p>
+              <p class="text-[14.4px] font-[600] text-[#CCCCCC] hover:text-[#66FCF1] my-2 text-center md:text-left">
+                <a href="">
+                  Privacy Policy
+                </a>
+              </p>
+              <p class="text-[14.4px] font-[600] text-[#CCCCCC] hover:text-[#66FCF1] my-2 text-center md:text-left">
+                <a href="">
+
+                  Copyright
+                </a>
+              </p>
+              <p class="text-[14.4px] font-[600] text-[#CCCCCC] hover:text-[#66FCF1] my-2 text-center md:text-left">
+                <a href="">
+
+                  Site Map
+                </a>
+              </p>
+            </li>
+          </div>
+
+            <li class="flex flex-col justify-center items-center md:items-start w-full md:w-[25%] px-10 py-4 md:py-2">
+              <button
+                class="flex justify-between items-center text-[18px] font-[700] px-8 py-[8px] rounded-[20px] shadow-[0_4px_4px_rgba(0,0,0,0.1)] mb-2 button-effect"
+              >
+                Contact Us
+
+                <i
+                  class="fa-solid fa-arrow-right-long ml-4 arrow-icon"
+                  style="color: #ffffff"
+                ></i>
+              </button>
+              <ul class="flex flex-row md:flex-col justify-start items-start mt-2">
+                <li
+                  class="group flex justify-center items-center my-2 bg-[#FFFFFF] shadow-[0_4px_4px_rgba(0,0,0,0.05)] w-[36px] h-[36px] rounded-full cursor-pointer hover:bg-[#202833] transition mx-2 md:mx-0"
+                >
+                <a
+                  href=""
+                  class="w-full h-full flex justify-center items-center rounded-full"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f group-hover:text-[#FFFFFF]"
+                  ></i></a>
+                </li>
+                <li
+                  class="group flex justify-center items-center my-2 bg-[#FFFFFF] shadow-[0_4px_4px_rgba(0,0,0,0.05)] w-[36px] h-[36px] rounded-full cursor-pointer hover:bg-[#202833] transition mx-2 md:mx-0"
+                >
+                <a
+                  href=""
+                  class="w-full h-full flex justify-center items-center rounded-full"
+                >
+                  <i
+                    class="fa-brands fa-x-twitter group-hover:text-[#FFFFFF]"
+                  ></i></a>
+                </li>
+                <li
+                  class="group flex justify-center items-center my-2 bg-[#FFFFFF] shadow-[0_4px_4px_rgba(0,0,0,0.05)] w-[36px] h-[36px] rounded-full cursor-pointer hover:bg-[#202833] transition mx-2 md:mx-0"
+                >
+                <a
+                  href=""
+                  class="w-full h-full flex justify-center items-center rounded-full"
+                >
+                  <i
+                    class="fa-brands fa-linkedin-in group-hover:text-[#FFFFFF]"
+                  ></i></a>
+                </li>
+                <li
+                  class="group flex justify-center items-center my-2 bg-[#FFFFFF] shadow-[0_4px_4px_rgba(0,0,0,0.05)] w-[36px] h-[36px] rounded-full cursor-pointer hover:bg-[#202833] transition mx-2 md:mx-0"
+                >
+                  <a
+                    href=""
+                    class="w-full h-full flex justify-center items-center rounded-full"
+                  >
+                    <i
+                      class="fa-brands fa-google-plus-g group-hover:text-[#FFFFFF]"
+                    ></i></a>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div
+            class="flex justify-center items-center w-[90%] md:w-[60%] shadow-[0_1px_4px_rgba(0,0,0,0.1)] px-4 py-3 rounded-[30px] mt-4 bg-[rgba(255,255,255,0.05)]"
+          >
+            <p class="text-[#CCCCCC] text-[14px] text-center">
+              © 2013 - 2023
+              <span class="font-[700] text-[#FFFFFF]">SANROJ Infotech</span> Pvt
+              Ltd | All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
