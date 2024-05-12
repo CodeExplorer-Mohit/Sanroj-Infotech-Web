@@ -52,13 +52,13 @@
             class="flex justify-end items-center w-[80%] px-4 sm:block hidden"
           >
             <ul class="flex justify-end items-center w-full">
-              <li class="text-[#FFFFFF] px-6 py-2">Home</li>
-              <li class="text-[#FFFFFF] px-6 py-2">About</li>
-              <li class="text-[#FFFFFF] px-6 py-2">Services</li>
-              <li class="text-[#FFFFFF] px-6 py-2">Marketing</li>
-              <li class="text-[#FFFFFF] px-6 py-2">Careers</li>
-              <li class="text-[#FFFFFF] px-6 py-2">Support</li>
-              <li class="text-[#FFFFFF] px-6 py-2">Bulk Sms</li>
+              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Home</li>
+              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">About</li>
+              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Services</li>
+              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Marketing</li>
+              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Careers</li>
+              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Support</li>
+              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Bulk Sms</li>
               <button
                 class="flex justify-between items-center text-[18px] font-[700] px-8 py-[8px] rounded-[20px] shadow-[0_4px_4px_rgba(0,0,0,0.1)] button-effect"
               >
@@ -161,7 +161,7 @@
               class="relative flex justify-center items-center w-[90%] md:w-[50%] z-[400] md:pt-10"
             >
               <p
-                class="absolute text-[#FFFFFF] text-[2.5rem] font-[800] z-[500] w-[50%] text-center drop-shadow leading-10 md:leading-none"
+                class="absolute text-[#FFFFFF] text-[2.5rem] font-[800] z-[500] w-[50%] text-center drop-shadow leading-10 md:leading-none hero-animate-text"
               >
                 Host Your Website
               </p>
@@ -609,7 +609,7 @@
         <!-- our services Card section  -->
 
         <section
-          class="bg-[#F6F7FC] flex justify-center items-center w-full py-4"
+          class="bg-[#ccc] flex justify-center items-center w-full py-4"
         >
           <div class="flex flex-col justify-center items-center w-[90%] py-4">
             <div class="flex flex-col justify-center items-center mb-5">
@@ -626,170 +626,87 @@
               </p>
             </div>
             <ul
-              class="flex flex-col flex-wrap md:flex-row justify-center md:justify-between items-center w-full my-10 px-4"
+              class="flex flex-col md:flex-wrap md:flex-row justify-center md:justify-between items-center w-full my-10 md:px-4"
             >
               <li
-                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+                class="flex flex-col justify-center items-center w-[100%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4 service-card-anime group"
               >
-                <p class="my-2 mb-4 text-[#444444] font-[800]">
+                <p class="my-2 mb-4 text-[1.2rem] text-[#333333] font-[700] z-[100] group-hover:text-[#FFFFFF]">
                   Host Yout Website
                 </p>
-                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+                <div class="flex justify-center items-center mb-4 mt-2 shadow-[0_0_8px_rgba(0,0,0,0.1)] rounded-[10px] w-[90%] bg-[#FFFFFF] bg-[#FFFFFF] z-[100]">
 
                   <img
-                  src="https://www.sanroj.com/images/site-icon11.png"
+                  src="./images/hosting.jpeg"
                   alt="img1"
                   class="w-[160px] my-2 mb-4 ml-4"
                   />
                 </div>
                 <button
-                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
-                >
-                  Know More More
-                </button>
-              </li>
-
-              <li
-                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
-              >
-                <p class="my-2 mb-4 text-[#444444] font-[800]">
-                  Host Yout Website
-                </p>
-                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
-
-                  <img
-                  src="https://www.sanroj.com/images/site-icon11.png"
-                  alt="img1"
-                  class="w-[160px] my-2 mb-4 ml-4"
-                  />
-                </div>
-                <button
-                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                  class="flex justify-center items-center my-2 mb-4 bg-[#FF7A1F] px-8 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)] z-[100] group-hover:bg-[#FFFFFF] group-hover:text-[#222222]"
                 >
                   Know More
                 </button>
               </li>
 
               <li
-                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+                class="flex flex-col justify-center items-center w-[100%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4 service-card-anime group"
               >
-                <p class="my-2 mb-4 text-[#444444] font-[800]">
-                  Host Yout Website
+                <p class="my-2 mb-4 text-[1.2rem] text-[#333333] font-[700] z-[100] group-hover:text-[#FFFFFF]">
+                 Cloud Service
                 </p>
-                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+                <div class="flex justify-center items-center mb-4 mt-2 shadow-[0_0_8px_rgba(0,0,0,0.1)] rounded-[10px] w-[90%] bg-[#FFFFFF] bg-[#FFFFFF] z-[100]">
 
                   <img
-                  src="https://www.sanroj.com/images/site-icon11.png"
+                  src="/images/cloud-service.svg"
                   alt="img1"
                   class="w-[160px] my-2 mb-4 ml-4"
                   />
                 </div>
                 <button
-                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                  class="flex justify-center items-center my-2 mb-4 bg-[#FF7A1F] px-8 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)] z-[100] group-hover:bg-[#FFFFFF] group-hover:text-[#222222]"
                 >
                   Know More
                 </button>
               </li>
 
               <li
-                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+                class="flex flex-col justify-center items-center w-[100%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4 service-card-anime group"
               >
-                <p class="my-2 mb-4 text-[#444444] font-[800]">
-                  Host Yout Website
+                <p class="my-2 mb-4 text-[1.2rem] text-[#333333] font-[700] z-[100] group-hover:text-[#FFFFFF]">
+                  Database Management
                 </p>
-                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+                <div class="flex justify-center items-center mb-4 mt-2 shadow-[0_0_8px_rgba(0,0,0,0.1)] rounded-[10px] w-[90%] bg-[#FFFFFF] bg-[#FFFFFF] z-[100]">
 
                   <img
-                  src="https://www.sanroj.com/images/site-icon11.png"
+                  src="/images/database.jpeg"
                   alt="img1"
                   class="w-[160px] my-2 mb-4 ml-4"
                   />
                 </div>
                 <button
-                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
-                >
-                  Know More
-                </button>
-              </li>
-              <li
-                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
-              >
-                <p class="my-2 mb-4 text-[#444444] font-[800]">
-                  Host Yout Website
-                </p>
-                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
-
-                  <img
-                  src="https://www.sanroj.com/images/site-icon11.png"
-                  alt="img1"
-                  class="w-[160px] my-2 mb-4 ml-4"
-                  />
-                </div>
-                <button
-                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                  class="flex justify-center items-center my-2 mb-4 bg-[#FF7A1F] px-8 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)] z-[100] group-hover:bg-[#FFFFFF] group-hover:text-[#222222]"
                 >
                   Know More
                 </button>
               </li>
 
               <li
-                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
+                class="flex flex-col justify-center items-center w-[100%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4 service-card-anime group"
               >
-                <p class="my-2 mb-4 text-[#444444] font-[800]">
-                  Host Yout Website
+                <p class="my-2 mb-4 text-[1.2rem] text-[#333333] font-[700] z-[100] group-hover:text-[#FFFFFF]">
+                  Online Exam
                 </p>
-                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
+                <div class="flex justify-center items-center mb-4 mt-2 shadow-[0_0_8px_rgba(0,0,0,0.1)] rounded-[10px] w-[90%] bg-[#FFFFFF] bg-[#FFFFFF] z-[100]">
 
                   <img
-                  src="https://www.sanroj.com/images/site-icon11.png"
+                  src="/images/online-exam.svg  "
                   alt="img1"
                   class="w-[160px] my-2 mb-4 ml-4"
                   />
                 </div>
                 <button
-                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
-                >
-                  Know More
-                </button>
-              </li>
-
-              <li
-                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
-              >
-                <p class="my-2 mb-4 text-[#444444] font-[800]">
-                  Host Yout Website
-                </p>
-                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
-
-                  <img
-                  src="https://www.sanroj.com/images/site-icon11.png"
-                  alt="img1"
-                  class="w-[160px] my-2 mb-4 ml-4"
-                  />
-                </div>
-                <button
-                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
-                >
-                  Know More
-                </button>
-              </li>
-
-              <li
-                class="flex flex-col justify-center items-center w-[90%] md:w-[300px] bg-[#] rounded-[10px] p-4 shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] my-6 mx-4"
-              >
-                <p class="my-2 mb-4 text-[#444444] font-[800]">
-                  Host Yout Website
-                </p>
-                <div class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] w-[70%]">
-
-                  <img
-                  src="https://www.sanroj.com/images/site-icon11.png"
-                  alt="img1"
-                  class="w-[160px] my-2 mb-4 ml-4"
-                  />
-                </div>
-                <button
-                  class="my-2 mb-4 bg-[#FF7A1F] px-5 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)]"
+                  class="flex justify-center items-center my-2 mb-4 bg-[#FF7A1F] px-8 py-1 rounded-[10px] font-[700] text-[#FFFFFF] shadow-[0_0_10px_3px_rgba(0,0,0,0.2)] z-[100] group-hover:bg-[#FFFFFF] group-hover:text-[#222222]"
                 >
                   Know More
                 </button>
@@ -812,7 +729,10 @@
                 We are the standard website and Application & Software Developer
                 in IT Industries. We have 150+ Indian and Foreign customers.
               </p>
-            </li>
+              <div class="flex justify-center items-center mt-4 w-[280px] h-[150px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938679.3056678696!2d76.17437957812504!3d23.217017000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42dc67f0a197%3A0x8651070fe48f007a!2sSanroj%20Infotech%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1715497936589!5m2!1sen!2sin" width="280" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              </li>
             <div class="flex justify-around items-start w-full md:w-[50%]">
             <li class="flex flex-col justify-center items-center md:items-start w-[50%] md:w-[50%] px-4 md:px-10 py-4 md:py-2">
               <p class="text-[18px] font-[700] text-[#FFFFFF] mb-2 text-center md:text-left">Services</p>
