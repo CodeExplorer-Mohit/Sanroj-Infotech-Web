@@ -146,3 +146,15 @@
   left: 0%;
   border-radius: 50%;
 }
+
+
+.hero-animate-text{
+  animation: text-genrate-hero;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+}
+
+@keyframes text-genrate-hero {
+  0%{transform: scale(10);}
+  100%{transform: scale(50%);}
+}
