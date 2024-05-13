@@ -7,5 +7,5 @@ document.addEventListener("click", (e) => {
   setTimeout(() => {
     serviceAnimText.innerHTML = serviceValue ? serviceValue : defaultValue;
     serviceAnimText.classList.remove("scale-animation");
-  }, 300); // Adjust according to transition duration
+  }, 300);
 });

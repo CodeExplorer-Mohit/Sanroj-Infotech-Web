@@ -149,7 +149,7 @@
 
 
 #service-anim-text{
-  transition: transform .3s ease;
+  transition: transform .2s ease;
 }
 
 .scale-animation {
