@@ -107,7 +107,12 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background-color: #FFF;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #FFFFFF;
+  transition: all .3s ease;
+}
+.service-card-anime:hover{
+  box-shadow: 0 0 8px 4px rgba(255, 255, 255,.2);
 }
 
 .service-card-anime::after{
