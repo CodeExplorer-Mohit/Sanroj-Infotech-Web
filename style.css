@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .toggler-menu-bar{
   position: absolute;
   background-color: rgb(15, 15, 15)!important;
