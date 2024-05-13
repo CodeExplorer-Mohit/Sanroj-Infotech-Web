@@ -12,7 +12,7 @@
 
 .svg-image{
   animation-name: svg-rotation;
-  animation-duration: 30s;
+  animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -20,6 +20,20 @@
 @keyframes svg-rotation {
   from{transform: rotate(0deg);}
   to{transform: rotate(360deg);}
+}
+
+.small-circle-round{
+  animation-name: small-circle-round-anime;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+@keyframes small-circle-round-anime {
+  from{transform: rotate(360deg)}
+  to{transform: rotate(0deg);}
 }
 
 
@@ -61,7 +75,6 @@
   left:110%;
 
 }
-
 
 .nav-link-hover{
   position: relative;
