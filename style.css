@@ -1,10 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:600);
+
 html{
   scroll-behavior: smooth;
 }
 
+*{
+  font-family: Lato, sans-serif;
+}
+
 .toggler-menu-bar{
   position: absolute;
-  background-color: rgb(15, 15, 15)!important;
+  background-color: #000!important;
   top: 70px; 
   right: -100%;
   transition: all .2s ease;
@@ -77,8 +83,7 @@ html{
 
 .button-effect:hover.button-effect::after{
   left:110%;
-
-}
+  }
 
 .nav-link-hover{
   position: relative;
@@ -116,14 +121,14 @@ html{
   transition: all .3s ease;
 }
 .service-card-anime:hover{
-  box-shadow: 0 0 8px 4px rgba(255, 255, 255,.2);
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255,.1);
 }
 
 .service-card-anime::after{
   content: "";
   width: 50%;
-  height:50%;
-  background-color: #222222;
+  height:40%;
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -153,18 +158,21 @@ html{
 
 
 #service-anim-text{
-  transition: transform 3s ease;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform .3s linear;
+  opacity: 1;
 }
 
 .scale-animation {
-  transform: scale(.5);
+  transform: scale(.2);
+  opacity: 0.1!important;
 }
 
 .reveal{
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2px ease;
+  transition: all 1s ease;
 }
 
 .reveal.active{

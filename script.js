@@ -17,12 +17,31 @@ const serviceAnimText = document.getElementById("service-anim-text");
 //   }
 // });
 
-document.addEventListener("click", (e) => {
-  let defaultValue = serviceAnimText.innerHTML;
-  let serviceValue = e.target.getAttribute("value");
+const servicesTextData = [
+  "Ebooks Services",
+  "Cloud Service",
+  "Database Management",
+  "Outsourcing",
+  "Domain Hosting",
+  "Digital Marketing",
+  "Ecommerce Website",
+  "Software Development",
+];
+
+// document.addEventListener("click", (e) => {
+//   let defaultValue = serviceAnimText.innerHTML;
+//   let serviceValue = e.target.getAttribute("value");
+//   serviceAnimText.classList.add("scale-animation");
+//   setTimeout(() => {
+//     serviceAnimText.innerHTML = serviceValue ? serviceValue : defaultValue;
+//     serviceAnimText.classList.remove("scale-animation");
+//   }, 300);
+// });
+let i = 0;
+setInterval(() => {
+  serviceAnimText.innerHTML = servicesTextData[(i === 7 ? (i = 0) : i++) % 7];
   serviceAnimText.classList.add("scale-animation");
   setTimeout(() => {
-    serviceAnimText.innerHTML = serviceValue ? serviceValue : defaultValue;
     serviceAnimText.classList.remove("scale-animation");
   }, 300);
-});
+}, 2000);
