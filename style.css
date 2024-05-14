@@ -9,10 +9,6 @@ html{
 }
 
 .toggler-menu-bar{
-  position: absolute;
-  background-color: #000!important;
-  top: 70px; 
-  right: -100%;
   transition: all .2s ease;
 }
 
@@ -54,11 +50,11 @@ html{
   transition-delay: .4s;
   transition-duration: .3s;
   transition-property: all;
+  color: #66fcf1!important;
 }
 
 .button-effect:hover{
-  box-shadow: 0 0 4px 0px rgba(255,255,255,1);
-  color: #66fcf1!important;
+  box-shadow: 0 0 8px 1px rgba(255,255,255,.1);
 }
 
 .arrow-icon{
@@ -165,17 +161,15 @@ html{
 
 .scale-animation {
   transform: scale(.2);
-  opacity: 0.1!important;
+  opacity: 0.1;
 }
 
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 1s ease;
+.button-automatic-animation{
+  animation: button-self-animate;
 }
 
-.reveal.active{
-  transform: translateY(0px);
-  opacity: 1;
+@keyframes button-self-animate{
+  to{}
+
+  from{}
 }

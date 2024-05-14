@@ -19,58 +19,35 @@
       class="root bg-[#F6F7FC] flex justify-center items-center flex-col overflow-hidden"
     >
       <header
-        class="bg-[#000] shadow-[0_0_8px_0_rgba(255,255,255,0.1)] flex justify-center items-center w-[100%] h-[70px] fixed top-0 z-[1000]"
+        class="bg-[#000] shadow-[0_0_8px_0_rgba(255,255,255,0.1)] flex justify-center items-center w-[100%] h-[70px] md:h-[120px] lg:h-[70px] fixed top-0 z-[1000]"
       >
         <nav class="flex justify-between items-center w-[90%]">
-          <div class="flex justify-start items-start text-[#FFF] w-[20%] lg:px-10 text-[1.5rem] lg:text-[1.8rem] font-extrabold">
+          <div class="flex justify-start items-start text-[#FFF] w-[20%] lg:px-10 text-[1.5rem] md:text-[2rem] lg:text-[1.8rem] font-extrabold">
             <span class="text-[#3B82F6]">san</span><span class="text-[#66FCF1]">roj</span>
           </div>
 
-          <label for="burger-menu" class="text-[#fff] cursor-pointer lg:hidden"
-            ><i class="fa-solid fa-bars text-[1.5rem]"></i></label>
+          <label for="burger-menu" class="text-[#fff] cursor-pointer flex md:flex lg:hidden"
+            ><i class="fa-solid fa-bars text-[1.5rem] md:text-[3rem]"></i></label>
           <input type="checkbox" id="burger-menu" class="hidden" />
-          <ul
-            class="group toggler-menu-bar flex flex-col justify-center items-start w-[60%] px-5 py-5 lg:hidden"
-          >
-            <li class="text-[#FFFFFF] px-6 py-2">Home</li>
-            <li class="text-[#FFFFFF] px-6 py-2">About</li>
-            <li class="text-[#FFFFFF] px-6 py-2">Services</li>
-            <li class="text-[#FFFFFF] px-6 py-2">Marketing</li>
-            <li class="text-[#FFFFFF] px-6 py-2">Careers</li>
-            <li class="text-[#FFFFFF] px-6 py-2">Support</li>
-            <button
-                class="flex justify-between items-center text-[18px] font-[700] px-4 py-[8px] rounded-[20px] shadow-[0_0_4px_0px_rgba(255,255,255,1)] lg:shadow-[0_4px_4px_rgba(0,0,0,0.5)] button-effect"
-              >
-                Contact Us
-
-                <i
-                  class="fa-solid fa-arrow-right-long ml-4 arrow-icon"
-                  style="color: #ffffff"
-                ></i>
-              </button>
-          </ul>
-          <div
-            class="hidden lg:flex justify-end items-center w-[80%] px-4 "
-          >
-            <ul class="flex justify-end items-center w-full">
-              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Home</li>
-              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">About</li>
-              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Services</li>
-              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Marketing</li>
-              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Careers</li>
-              <li class="text-[#FFFFFF] px-6 py-2 nav-link-hover">Support</li>
+          
+            <ul class="flex flex-col lg:flex-row justify-center items-start lg:justify-end lg:items-center w-[50%] lg:w-[80%] absolute toggler-menu-bar top-[70px] md:top-[120px] lg:top-auto right-[-100%] lg:right-10 bg-[#000000] px-5 pt-2 pb-24 md:pb-48 lg:py-0">
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">Home</li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">About</li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">Services</li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">Marketing</li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">Careers</li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">Support</li>
               <button
-                class="flex justify-between items-center text-[18px] font-[700] px-8 py-[8px] rounded-[20px]  shadow-[0_0_4px_0px_rgba(255,255,255,1)] lg:shadow-[0_4px_4px_rgba(0,0,0,0.1)] button-effect"
+                class="flex justify-between items-center text-[18px] md:text-[1.5rem] lg:text-[1.1rem] font-[700] mt-4 lg:mt-0 px-4 lg:px-8 py-[8px] rounded-[20px] shadow-[0_0_4px_0px_rgba(255,255,255,.5)] lg:shadow-[0_0_4px_rgba(255,255,255,0.2)] button-effect"
               >
                 Contact Us
 
                 <i
                   class="fa-solid fa-arrow-right-long ml-4 arrow-icon"
-                  style="color: #ffffff"
+                  style="color: #FFFFFF"
                 ></i>
               </button>
             </ul>
-          </div>
         </nav>
       </header>
 
@@ -161,7 +138,7 @@
 
             <!-- right-box -->
             <div
-              class="relative flex justify-center items-center w-[100%] md:w-[80%] lg:w-[50%] z-[400] lg:pt-10 md:mb-28"
+              class="relative flex justify-center items-center w-[100%] md:w-[90%] lg:w-[50%] z-[400] lg:pt-10 md:mb-28"
             >
               <p id="service-anim-text"
                 class="absolute flex justify-center items-center text-[#FFFFFF] text-[1.8rem] md:text-[2.8rem] lg:text-[2.5rem] font-[800] z-[500] w-[50%] md:text-center md:w-[30%] leading-[40px] text-center"
@@ -185,7 +162,8 @@
               </div>
               <svg 
               class="svg-image relative z-[400]"
-              width="476" height="450" viewBox="0 0 476 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+              width="450" height="450" 
+              viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M222.283 218V202.182H224.714V218H222.283ZM223.519 199.545C223.045 199.545 222.637 199.384 222.294 199.061C221.957 198.739 221.789 198.351 221.789 197.898C221.789 197.445 221.957 197.057 222.294 196.734C222.637 196.411 223.045 196.25 223.519 196.25C223.993 196.25 224.398 196.411 224.734 196.734C225.078 197.057 225.249 197.445 225.249 197.898C225.249 198.351 225.078 198.739 224.734 199.061C224.398 199.384 223.993 199.545 223.519 199.545Z" fill="#222222"/>
                 <circle cx="237.999" cy="226" r="200" fill="#060709" stroke="#FFFFFF" stroke-opacity="0.266667" stroke-width="2" stroke-dasharray="5 5"/>
                 
@@ -535,15 +513,15 @@
             <div class="flex flex-col lg:flex-row justify-center items-center w-full mt-2">
             <div class="flex justify-center items-center mb-1">
               <img src="/images/telephone-call.png" class="w-[28px] lg:w-[32px]" alt="email">
-              <span class="text-[#FFFFFF] ml-2 lg:mr-4 text-[16px] md:text-[1.5rem] lg:text-[16px]">+919685044063</span>
+              <span class="text-[#FFFFFF] ml-2 lg:mr-4 text-[13px] md:text-[1.5rem] lg:text-[16px]">+919685044063</span>
             </div>
             <div class="flex justify-center items-center my-1">
               <img src="/images/whatsapp.png" class="w-[28px] lg:w-[32px]" alt="email">
-              <span class="text-[#FFFFFF] ml-2 lg:mr-4 text-[16px] md:text-[1.5rem] lg:text-[16px]">+919685044063</span>
+              <span class="text-[#FFFFFF] ml-2 lg:mr-4 text-[13px] md:text-[1.5rem] lg:text-[16px]">+919685044063</span>
             </div>
             <div class="flex justify-center items-center mb-1">
               <img src="/images/paper.png " class="w-[28px] lg:w-[32px]" alt="email">
-              <span class="text-[#FFFFFF] ml-2 lg:mr-4">info@sanroj.com</span>
+              <span class="text-[#FFFFFF] ml-2 md:ml-3 lg:mr-4 text-[13px] md:text-[1.5rem] lg:text-[18px]">info@sanroj.com</span>
             </div>
           </div>
         </div>
@@ -597,7 +575,7 @@
 
             <li class="flex flex-col justify-center items-center lg:items-start w-full lg:w-[25%] px-10 py-4 lg:py-2">
               <button
-                class="flex justify-between items-center text-[18px] font-[700] px-8 py-[8px] rounded-[20px] shadow-[0_0_4px_0px_rgba(255,255,255,1)] lg:shadow-[0_4px_4px_rgba(0,0,0,0.1)] mb-2 button-effect"
+                class="flex justify-between items-center font-[700] text-[1.2rem] md:text-[2rem] lg:text-[1.2rem] px-8 py-[8px] rounded-[20px] shadow-[0_0_4px_0px_rgba(255,255,255,1)] lg:shadow-[0_0_4px_rgba(255,255,255,0.2)] mb-2 button-effect"
               >
                 Contact Us
 
