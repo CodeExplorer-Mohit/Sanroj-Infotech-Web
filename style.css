@@ -50,7 +50,7 @@ html{
   transition-delay: .4s;
   transition-duration: .3s;
   transition-property: all;
-  color: #66fcf1!important;
+  color: #66fcf1;
 }
 
 .button-effect:hover{
@@ -74,11 +74,11 @@ html{
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255,1);
-  left: -110%;
+  left: -150%;
 }
 
 .button-effect:hover.button-effect::after{
-  left:110%;
+  left:150%;
   }
 
 .nav-link-hover{
@@ -172,4 +172,80 @@ html{
   to{}
 
   from{}
+}
+
+
+
+/* /////////////// */
+
+.text-shadow-efffect{
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 1);
+}
+
+.dom-hos-background-img{
+  background-image: url("./images/service/software-development-programming-coding-software.jpg");
+  background-repeat: no-repeat;
+}
+.dom-hos-background-img span{
+  filter: blur(10px);
+}
+
+
+.web-host-expand-text-1{
+  transition: all .2s ease;
+  height: 0;
+  padding: 0;
+}
+
+#web-host-box-expand-1:checked~.web-host-expand-text-1{
+  height: auto;
+  padding: 10px 0;
+}
+
+
+.web-host-expand-text-2{
+  transition: all .2s ease;
+  height: 0;
+  padding: 0;
+}
+
+#web-host-box-expand-2:checked~.web-host-expand-text-2{
+  height: auto;
+  padding: 10px 0;
+}
+
+.web-host-expand-text-3{
+  transition: all .2s ease;
+  height: 0;
+  padding: 0;
+}
+
+#web-host-box-expand-3:checked~.web-host-expand-text-3{
+  height: auto;
+  padding: 10px 0;
+}
+
+
+.web-host-expand-text-4{
+  transition: all .4s ease;
+  height: 0;
+  padding: 0;
+}
+
+#web-host-box-expand-4:checked~.web-host-expand-text-4{
+  height: auto;
+  padding: 10px 0;
+}
+
+.service-dropdown-cotainer{
+  transition: all .2s ease;
+  height: 32px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#service-dropdown:checked~.service-dropdown-cotainer{
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
 }
