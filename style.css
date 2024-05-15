@@ -148,8 +148,8 @@ html{
 }
 
 .scale-animation {
-  transform: scale(.1);
-  /* opacity: 0.1; */
+  transform: scale(.2);
+  opacity: 0.1;
 }
 
 .button-automatic-animation{
