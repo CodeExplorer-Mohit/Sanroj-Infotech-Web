@@ -16,73 +16,65 @@
   </head>
   <body>
     <div class="root bg-[#00000055] flex justify-center items-center flex-col overflow-hidden">
-    <section class="flex justify-between items-center lg:w-[100%]">
-      <div class="flex justify-between items-center relative text-[#FFF] w-[100%] px-10 bg-[rgba(0,0,0,0.1)]">
-          <span class="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-cover bg-left dom-hos-background-img blur-[4px] mix-blend-color-dodge"></span>
-          <div class="relative flex flex-col justify-center items-center w-[60%] h-[400px] z-0">
-            <p class="text-[3rem] font-extrabold w-[full] text-shadow-efffect relative z-30 mb-3">Domain Hosting</p>
-            <div class="flex justify-center items-start mt-3 h-[25px]n">
-              <p class="bg-[#3b82F6] w-[100px] h-[4px] rounded-full mx-2 z-30 relative mt-3"></p>
-              <p class="text-shadow-efffect text-[#FFFFFF] font-semibold text-[1.2rem] mx-2 z-30 relative before:w-[100px] bg:h-[12px] before:absolute before:bg-[#3B82F6]">
-                <a href="../../index.html">Home</a>
-              </p>
-              <p class="text-[#FFFFFF] font-semibold text-[1.2rem] mx-2 z-30 relative">|</p>
-              <!-- dropdown -->
-              <div class="flex justify-center items-center rounded-lg overflow-hidden border bg-[rgba(0, 0, 0, 0.5)] py-[18px] h-0 hover:py-[130px] hover:bg-[rgba(0,0,0,0.2)] trans-all-ease z-30 relative pr-6 w-[220px]">
-                <ul class="flex flex-col justify-center items-start ml-2 absolute w-full pl-2 top-0">
-                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
-                    <a href="./domain_hosting.html">Domain Hosting</a>
-                  </li>
-                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
-                    <a href="">Ebooks Service</a>
-                  </li>
-                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
-                    <a href="">Digital Marketing</a>
-                  </li>
-                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
-                    <a href="">Cloud Service</a>
-                  </li>
-                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
-                    <a href="">Database Service</a>
-                  </li>
-                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
-                    <a href="">Ecommerce Website</a>
-                  </li>
-                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
-                    <a href="">Software Development</a>
-                  </li>
-                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
-                    <a href="">Outsourcing</a>
-                  </li>
-                </ul>
-                <div class="text-[#444] flex justify-center items-center cursor-pointer mx-2 absolute top-2 right-1">
-                  <i class="fa-solid fa-caret-down active:text-[#FFFFFF] text-[#3B82F6] text-[1.5rem] translate-y-[]"></i>
-                </div>
-              </div>
-              <p class="bg-[#3b82F6] w-[100px] h-[4px] rounded-full mx-2 z-30 relative mt-3"></p>
-            </div>
+      <header
+        class="bg-[#000] shadow-[0_0_8px_0_rgba(255,255,255,0.1)] flex justify-center items-center w-[100%] h-[70px] md:h-[120px] lg:h-[70px] fixed top-0 z-[1000]"
+      >
+        <nav class="flex justify-between items-center w-[90%]">
+          <div class="flex justify-start items-start text-[#FFF] w-[20%] lg:px-10 text-[1.5rem] md:text-[2rem] lg:text-[1.8rem] font-extrabold">
+            <span class="text-[#3B82F6]">san</span><span class="text-[#66FCF1]">roj</span>
           </div>
-         <div class="flex justify-center items-center w-[40%] bg-[rgba(0,0,0,0.1)] shadow-[0_0_8px_rgba(255,255,255,0.5)] border z-30 relative rounded-lg py-4 px-4">
-          <ul class="flex justify-center items-center">
-            <li class="flex justify-center items-center !text-[#FFFFFF] mx-2 p-2 rounded-md font-semibold bg-[rgba(0,0,0,0.1)] button-effect">
-              <a href="">Mraketing</a>
-            </li>
-            <li class="flex justify-center items-center !text-[#FFFFFF] mx-2 p-2 rounded-md font-semibold bg-[rgba(0,0,0,0.1)] button-effect">
-              <a href="">Support</a>
-            </li>
-            <button
-                class="flex justify-between items-center text-[18px] md:text-[1.5rem] lg:text-[1.1rem] font-[700] mt-4 lg:mt-0 px-4 lg:px-2 py-[8px] rounded-lg !text-[#FFFFFF] shadow-[0_0_4px_0px_rgba(255,255,255,.5)] lg:shadow-[0_0_4px_rgba(255,255,255,0.2)] button-effect"
+
+          <label for="burger-menu" class="text-[#fff] cursor-pointer flex md:flex lg:hidden"
+            ><i class="fa-solid fa-bars text-[1.5rem] md:text-[3rem]"></i></label>
+          <input type="checkbox" id="burger-menu" class="hidden" />
+          
+            <ul class="flex flex-col lg:flex-row justify-center items-start lg:justify-end lg:items-center w-[50%] lg:w-[80%] absolute toggler-menu-bar top-[70px] md:top-[120px] lg:top-auto right-[-100%] lg:right-10 bg-[#000000] px-5 pt-2 pb-24 md:pb-48 lg:py-0">
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+                <a href="">Home</a> </li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+                <a href="">About</a> </li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+                <a href="./pages/service/domain_hosting.html">Services</a>
+              </li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+                <a href="">Marketing</a>
+              </li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+                <a href="">Careers</a>
+              </li>
+              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+                <a href="">Support</a>
+              </li>
+              <button
+                class="flex justify-between items-center text-[18px] md:text-[1.5rem] lg:text-[1.1rem] font-[700] mt-4 lg:mt-0 px-4 lg:px-8 py-[8px] rounded-[20px] shadow-[0_0_4px_0px_rgba(255,255,255,.5)] lg:shadow-[0_0_4px_rgba(255,255,255,0.2)] button-effect"
               >
-              <a href="">
                 Contact Us
-              </a>
+
                 <i
                   class="fa-solid fa-arrow-right-long ml-4 arrow-icon"
                   style="color: #FFFFFF"
                 ></i>
               </button>
-          </ul>
-        </div> 
+            </ul>
+        </nav>
+      </header>
+
+    <section class="flex justify-between items-center lg:w-[100%]">
+      <div class="flex justify-between items-center relative text-[#FFF] w-[100%] px-10 bg-[rgba(0,0,0,0.7)]">
+          <span class="absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-cover bg-left dom-hos-background-img blur-[4px] mix-blend-color-dodge"></span>
+          <span class="absolute bg-[#3b82F699] w-[50%] h-[30%] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] blur-[100px]"></span>
+          <div class="relative flex flex-col justify-center items-center w-[100%] h-[400px] z-0">
+            <p class="text-[3rem] font-extrabold w-[full] text-shadow-efffect relative z-30 mb-3">Domain Hosting</p>
+            <div class="flex justify-center items-start mt-3 h-[25px]n">
+              <p class="bg-[#3b82F6] w-[100px] h-[4px] rounded-full mx-2 z-30 relative mt-3"></p>
+              <p class="text-shadow-efffect text-[#FFFFFF] font-semibold text-[1.2rem] mx-2 z-30 relative before:w-[100px] bg:h-[12px] before:absolute before:bg-[#3B82F6] hover:underline">
+                <a href="../../index.html">Home</a>
+              </p>
+              <p class="text-[#FFFFFF] font-semibold text-[1.2rem] mx-2 z-30 relative">|</p>
+              <p class="text-[#FFFFFF] font-semibold text-[1.2rem] mx-2 z-30 relative">Domain-Hosting</p>
+              <p class="bg-[#3b82F6] w-[100px] h-[4px] rounded-full mx-2 z-30 relative mt-3"></p>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -174,19 +166,25 @@
           <div class="flex justify-center items-center text-[#66FCF1] mb-2 lg:w-[60%]">
             <p class="text-[14px] md:text-[1.5rem] lg:text-[1.5rem] font-[700] text-[#FFFFFF] text-center">Feel free to reach out to us anytime! We're here to assist you.</p>
           </div>
-        <div class="flex flex-col lg:flex-row justify-center items-center w-full mt-2">
-        <div class="flex justify-center items-center mb-1">
-          <img src="/images/telephone-call.png" class="w-[28px] lg:w-[32px]" alt="email">
-          <span class="text-[#FFFFFF] ml-2 lg:mr-4 text-[13px] md:text-[1.5rem] lg:text-[16px]">+919685044063</span>
-        </div>
-        <div class="flex justify-center items-center my-1">
-          <img src="/images/whatsapp.png" class="w-[28px] lg:w-[32px]" alt="email">
-          <span class="text-[#FFFFFF] ml-2 lg:mr-4 text-[13px] md:text-[1.5rem] lg:text-[16px]">+919685044063</span>
-        </div>
-        <div class="flex justify-center items-center mb-1">
-          <img src="/images/paper.png " class="w-[28px] lg:w-[32px]" alt="email">
-          <span class="text-[#FFFFFF] ml-2 md:ml-3 lg:mr-4 text-[13px] md:text-[1.5rem] lg:text-[18px]">info@sanroj.com</span>
-        </div>
+        <div class="flex flex-col lg:flex-row justify-center items-center w-full mt-2 relative z-30">
+          <div class="flex justify-center items-center mb-1 group"> 
+            <a href="tel:+919685044063" aria-level= "Phone Call" class="flex justify-center items-center">
+              <img src="/images/telephone-call.png" class="w-[28px] lg:w-[32px]" alt="email">
+              <span class="text-[#FFFFFF] ml-2 lg:mr-4 text-[13px] md:text- group-hover:text-[#3B82F6] [1.5rem] lg:text-[16px]">+919685044063</span>
+            </a>
+          </div>
+          <div class="flex justify-center items-center my-1 group">
+            <a class="flex justify-center items-center" aria-label="Chat on WhatsApp" href="https://wa.me/9685044063">
+              <img src="/images/whatsapp.png" class="w-[28px] lg:w-[32px]" alt="email">
+              <span class="text-[#FFFFFF] ml-2 lg:mr-4 text-[13px] md:tex group-hover:text-[#3B82F6] t-[1.5rem] lg:text-[16px]">+919685044063</span>
+            </a> 
+          </div>
+          <div class="flex justify-center items-center mb-1 group">
+            <a href="mailto:info@sanroj.com" class="flex justify-center items-center">
+              <img src="/images/paper.png " class="w-[28px] lg:w-[32px]" alt="email">
+              <span class="text-[#FFFFFF] ml-2 md:ml-3 lg:mr-4 text-[13px] group-hover:text-[#3B82F6]  md:text-[1.5rem] lg:text-[17px]">info@sanroj.com</span>
+            </a>
+          </div>
       </div>
     </div>
 
@@ -312,3 +310,38 @@
 </body>
 <script src="../../script.js"></script>
 </html>
+
+
+
+<!-- dropdown -->
+<!-- <div class="flex justify-center items-center rounded-lg overflow-hidden border bg-[rgba(0, 0, 0, 0.5)] py-[18px] h-0 hover:py-[130px] hover:bg-[rgba(0,0,0,0.2)] trans-all-ease z-30 relative pr-6 w-[220px]">
+  <ul class="flex flex-col justify-center items-start ml-2 absolute w-full pl-2 top-0">
+    <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+      <a href="./domain_hosting.html">Domain Hosting</a>
+    </li>
+    <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+      <a href="">Ebooks Service</a>
+    </li>
+    <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+      <a href="">Digital Marketing</a>
+    </li>
+    <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+      <a href="">Cloud Service</a>
+    </li>
+    <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+      <a href="">Database Service</a>
+    </li>
+    <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+      <a href="">Ecommerce Website</a>
+    </li>
+    <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+      <a href="">Software Development</a>
+    </li>
+    <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+      <a href="">Outsourcing</a>
+    </li>
+  </ul>
+  <div class="text-[#444] flex justify-center items-center cursor-pointer mx-2 absolute top-2 right-1">
+    <i class="fa-solid fa-caret-down active:text-[#FFFFFF] text-[#3B82F6] text-[1.5rem] translate-y-[]"></i>
+  </div>
+</div> -->
