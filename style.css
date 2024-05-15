@@ -139,18 +139,6 @@ html{
   height: 98%;
 }
 
-.service-card-anime::before{
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  /* background-color: red; */
-  box-shadow: 0 0 300px 100px #66fcf1;
-  z-index: 99;
-  top: 0%;
-  left: 0%;
-  border-radius: 50%;
-}
 
 
 #service-anim-text{
