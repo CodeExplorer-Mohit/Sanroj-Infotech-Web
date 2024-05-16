@@ -18,49 +18,105 @@
     <div
       class="root bg-[#F6F7FC] flex justify-center items-center flex-col overflow-hidden"
     >
-      <header
-        class="bg-[#000] shadow-[0_0_8px_0_rgba(255,255,255,0.1)] flex justify-center items-center w-[100%] h-[70px] md:h-[120px] lg:h-[70px] fixed top-0 z-[1000]"
-      >
-        <nav class="flex justify-between items-center w-[90%]">
-          <div class="flex justify-start items-start text-[#FFF] w-[20%] lg:px-10 text-[1.5rem] md:text-[2rem] lg:text-[1.8rem] font-extrabold">
-            <span class="text-[#3B82F6]">san</span><span class="text-[#66FCF1]">roj</span>
-          </div>
+    <header
+    class="bg-[#000] shadow-[0_0_8px_0_rgba(255,255,255,0.1)] flex justify-center items-center w-[100%] h-[70px] md:h-[120px] lg:h-[70px] fixed top-0 z-[1000]"
+  >
+    <nav class="flex justify-between items-center w-[90%]">
+      <div class="flex justify-start items-start text-[#FFF] w-[20%] lg:px-10 text-[1.5rem] md:text-[2rem] lg:text-[1.8rem] font-extrabold">
+        <span class="text-[#3B82F6]">san</span><span class="text-[#66FCF1]">roj</span>
+      </div>
 
-          <label for="burger-menu" class="text-[#fff] cursor-pointer flex md:flex lg:hidden"
-            ><i class="fa-solid fa-bars text-[1.5rem] md:text-[3rem]"></i></label>
-          <input type="checkbox" id="burger-menu" class="hidden" />
-          
-            <ul class="flex flex-col lg:flex-row justify-center items-start lg:justify-end lg:items-center w-[60%] lg:w-[80%] absolute toggler-menu-bar top-[70px] md:top-[120px] lg:top-auto right-[-100%] lg:right-10 bg-[#000000] px-5 pt-2 pb-24 md:pb-48 lg:py-0">
-              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
-                <a href="./index.html">Home</a> 
-              </li>
-              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
-                <a href="">About</a> </li>
-              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
-                <a href="./pages/service/domain_hosting.html">Services</a>
-              </li>
-              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
-                <a href="">Marketing</a>
-              </li>
-              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
-                <a href="">Careers</a>
-              </li>
-              <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
-                <a href="">Support</a>
-              </li>
-              <button
-                class="flex justify-between items-center text-[18px] md:text-[1.5rem] lg:text-[1.1rem] font-[700] mt-4 lg:mt-0 px-4 lg:px-8 py-[8px] rounded-[20px] shadow-[0_0_4px_0px_rgba(255,255,255,.5)] lg:shadow-[0_0_4px_rgba(255,255,255,0.2)] button-effect"
-              >
-                Contact Us
+      <label for="burger-menu" class="text-[#fff] cursor-pointer flex md:flex lg:hidden"
+        ><i class="fa-solid fa-bars text-[1.5rem] md:text-[3rem]"></i></label>
+      <input type="checkbox" id="burger-menu" class="hidden" />
+      
+        <ul class="flex flex-col lg:flex-row justify-center items-start lg:justify-end lg:items-center w-[60%] lg:w-[80%] absolute toggler-menu-bar top-[70px] md:top-[120px] lg:top-auto right-[-100%] lg:right-10 bg-[#000000] px-5 pt-2 pb-24 md:pb-48 lg:py-0">
+          <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+            <a href="../../index.html">Home</a> 
+          </li>
+          <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+            <a href="">About</a> </li>
+          <li class="relative flex flex-col justify-start items-start text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover group">
+            <a>Services <i class="fa-solid fa-caret-down ml-1 group-hover:text-[#66FCF1]"></i></a>
+            <div class="absolute left-auto top-[45px] flex justify-center items-center rounded-lg overflow-hidden bg-[rgba(0, 0, 0, 0.5)] py-0 h-0 group-hover:py-[130px] bg-[rgba(0,0,0,0.8)] trans-all-ease z-30 pr-6 w-[220px]">
+              <ul class="flex flex-col justify-center items-start ml-2 absolute w-full pl-2 top-0">
+                <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                  <a href="./domain_hosting.html">Domain Hosting</a>
+                </li>
+                <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                  <a href="">Ebooks Service</a>
+                </li>
+                <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                  <a href="">Digital Marketing</a>
+                </li>
+                <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                  <a href="">Cloud Service</a>
+                </li>
+                <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                  <a href="">Database Service</a>
+                </li>
+                <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                  <a href="">Ecommerce Website</a>
+                </li>
+                <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                  <a href="">Software Development</a>
+                </li>
+                <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                  <a href="">Outsourcing</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative flex flex-col justify-start items-start text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover group">
+            <a>Marketing <i class="fa-solid fa-caret-down ml-1 group-hover:text-[#66FCF1]"></i></a>
+            <div class="absolute left-auto top-[45px] flex justify-center items-center rounded-lg overflow-hidden bg-[rgba(0, 0, 0, 0.5)] py-0 h-0 group-hover:py-[130px] bg-[rgba(0,0,0,0.8)] trans-all-ease z-30 pr-6 w-[220px]">
+                <ul class="flex flex-col justify-center items-start ml-2 absolute w-full pl-2 top-0">
+                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                    <a href="./domain_hosting.html">Domain Hosting</a>
+                  </li>
+                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                    <a href="">Ebooks Service</a>
+                  </li>
+                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                    <a href="">Digital Marketing</a>
+                  </li>
+                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                    <a href="">Cloud Service</a>
+                  </li>
+                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                    <a href="">Database Service</a>
+                  </li>
+                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                    <a href="">Ecommerce Website</a>
+                  </li>
+                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                    <a href="">Software Development</a>
+                  </li>
+                  <li class="list-disc list-inside text-[#FFFFFF] font-semibold text-[1rem] my-1 mx-2 hover:underline cursor-pointer">
+                    <a href="">Outsourcing</a>
+                  </li>
+                </ul>
+            </div>
+          </li>
+          <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+            <a href="">Careers</a>
+          </li>
+          <li class="text-[#FFFFFF] md:text-[1.5rem] lg:text-[.9rem] md:my-3 px-6 py-2 nav-link-hover">
+            <a href="">Support</a>
+          </li>
+          <button
+            class="flex justify-between items-center text-[18px] md:text-[1.5rem] lg:text-[1.1rem] font-[700] mt-4 lg:mt-0 px-4 lg:px-8 py-[8px] rounded-[20px] shadow-[0_0_4px_0px_rgba(255,255,255,.5)] lg:shadow-[0_0_4px_rgba(255,255,255,0.2)] button-effect"
+          >
+            Contact Us
 
-                <i
-                  class="fa-solid fa-arrow-right-long ml-4 arrow-icon"
-                  style="color: #FFFFFF"
-                ></i>
-              </button>
-            </ul>
-        </nav>
-      </header>
+            <i
+              class="fa-solid fa-arrow-right-long ml-4 arrow-icon"
+              style="color: #FFFFFF"
+            ></i>
+          </button>
+        </ul>
+    </nav>
+  </header>
 
       <main
         class="w-[100%] flex justify-center items-center flex-col mt-[60px]"
